@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import django_heroku
+import dj_database_url
+from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -48,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'dentist.urls'
@@ -124,6 +128,9 @@ STATICFILES_DIRS = [
 ]
 
 
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+
 # ------------------------------------------------------------
 # EMAIL --> TESTING
 # Email Settings
@@ -157,3 +164,7 @@ EMAIL_HOST_USER = 'pantufothought@gmail.com'
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True                                        # for development
 # EMAIL_USE_SSL = False                                     # for production
+
+
+
+django_heroku.settings(locals())
