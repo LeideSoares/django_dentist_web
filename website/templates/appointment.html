@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block meta_description %} This is a website of Dental  Medical Center in Pantufo  {% endblock %}
+{% block title %} Appointment {% endblock %}
+
+{% block image %}
+    <br><br><br><br>
+      <section class="form" id="contact_sec">
+          <div class="container">
+          <div class="row">
+            <!-- Section Heading -->
+            <div class="col-12">
+              <div class="section-heading text-center white">
+                <h2 style="padding:30px;">Book An Apointment</h2><br>
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <!-- Appointment Form -->
+              <div class="appointment-form">
+                <form action="{% url 'appointment' %}" method="post">
+                    {% csrf_token %}
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group mb-30">
+                        <input type="text" name="client-name" class="form-control" placeholder="Your Name" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-30">
+                        <input type="text" name="client-phone" class="form-control" placeholder="Your Phone" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-30">
+                        <input type="email" name="client-email" class="form-control" placeholder="Your Email" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-30">
+                        <input type="text" name="client-address" class="form-control" placeholder="Your Address">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-30">
+                        <select name="client-schedule" class="form-control">
+                          <option value="First Choice Appointment Time">First Choice Appointment Time</option>
+                          <option value="9 AM to 10 AM">9 AM to 10 AM</option>
+                          <option value="11 AM to 12 PM">11 AM to 12 PM</option>
+                          <option value="2 PM to 4 PM">2 PM to 4 PM</option>
+                          <option value="8 PM to 10 PM">4 PM to 6 PM</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-30">
+                        <select name="client-date" class="form-control">
+                          <option value="Choose Your Date">Choose Your Date</option>
+                          <option value="Monday">Monday</option>
+                          <option value="Tuesday">Tuesday</option>
+                          <option value="Wednesday">Wednesday</option>
+                          <option value="Thursday">Thursday</option>
+                          <option value="Friday">Friday</option>
+                          <option value="Saturday">Saturday</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group mb-30">
+                        <textarea name="client-message" class="form-control" placeholder="Your Message"></textarea>
+                      </div>
+
+                    </div>
+                    <div class="col-12 text-center">
+                      <button type="submit" class="btn dento-btn">Booking Now</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        {% if client_name %}
+        <center>
+          <em>Your Name:</em>           {{ client_name}}<br><br>
+          <em>Your Phone:</em>          {{ client_phone }}<br><br>
+          <em`>Your Email:</em>         {{ client_email }}<br><br>
+          <em>Your Address:</em>        {{ client_address }}<br><br>
+          <em>Your Schedule Time:</em>  {{ client_schedule }}<br><br>
+          <em>Your Schedule Date:</em>  {{ client_date }}<br><br>
+          <em>Your Message:</em>        {{client_message}}<br><br>
+        </center>
+        {% endif %}
+
+<!--        <center>-->
+<!--          <h1>Review Your Information:</h1>-->
+<!--         <div class="row">-->
+<!--            <div class="col-12 col-md-6"><strong>Your Name:</strong> </div>-->
+<!--            <div class="col-6 col-md-6">Leide Soares</div>-->
+<!--         </div><br>-->
+<!--         <div class="row">-->
+<!--            <div class="col-12 col-md-4"><strong>Your Name:</strong> </div>-->
+<!--            <div class="col-6 col-md-4">Leide Soares</div>-->
+<!--         </div>-->
+<!--         <div class="row">-->
+<!--            <div class="col-12 col-md-4"><strong>Your Name:</strong> </div>-->
+<!--            <div class="col-6 col-md-4">Leide Soares</div>-->
+<!--         </div>-->
+<!--        </center>-->
+
+      </section>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

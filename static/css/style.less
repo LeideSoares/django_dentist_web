@@ -1,0 +1,603 @@
+
+
+@main: #13bfb1;
+@maindark: #292b2c;
+@font1: #3bbbb0;
+@font2: #333333;
+@font3: #737474;
+@font4: #b5b5b5;
+@font4: white;
+
+
+
+* {
+   margin: 0;
+   padding: 0;
+}
+*:focus {
+   border: @font1;
+}
+body {
+   font-family: "Roboto";
+   overflow-x: hidden;
+}
+.jumbotron {
+   position: relative;
+   background-image: url(../img/slide-doctor-bg.jpg);
+   background-size: cover;
+   min-height: 98vh;
+   font-family: "Roboto";
+   position: relative;
+   .col-md-7 {
+      line-height: 29px;
+   }img.dentist {
+      width: 63%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      animation: slidein 2s ease-in-out;
+      z-index: 8;
+   }
+   }
+@keyframes slidein {
+   0% {
+      right: -2000px;
+      opacity: 0;
+   }
+   100% {
+      right: 0;
+      opacity: 1;
+   }
+}
+.jumbotron img.dentist2 {
+      width: 31%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      animation: slidein 2s ease-in-out;
+      z-index: 0;
+}
+
+.jumbotron .social {
+   text-align: right;
+   & li:hover {
+      color: white;
+      cursor: pointer;
+      box-shadow: 1px 1px 2px #007171;
+   }
+}
+.jumbotron .container {
+   margin-top: -30px;
+   .navbar-brand img {
+      width: 30px;
+      vertical-align: sub;
+   }
+   .contactbar li {
+      display: inline-block;
+      padding: 10px;
+      h6 {
+         color: white;
+      }
+      }
+}.socialmedia {
+     li {
+   display: inline-block;
+        line-height: 24px;
+   }
+}
+.jumbotron h2 {
+   font-size: 45px;
+}
+.jumbotron button {
+   background: @main;
+   color: @font4;
+}
+.jumbotron .btn-group {
+   margin-top: 30px;
+
+   .btn-calendar {
+      border: #00d6a5;
+      border-right: 2px solid darken(#bdfff0, 15%);
+   }
+}
+.jumbotron .title {
+   margin-top: 10%;
+   h2 {
+      font-size: 5vw;
+   }
+   h3 {
+      font-size: 1vw;
+      margin-top: 2%;
+   }
+}
+span {
+   color: #13bfb1;
+}
+span.sup {
+   color: #13bfb1;
+   vertical-align: super;
+   font-size: 13px;
+}
+.navbar {
+   height: 85px;
+   background: #ff0000;
+   z-index: 0;
+}
+.navbar-nav a{
+   border-right: 1px dotted #d6d6d6;
+   box-sizing: content-box;
+   color: #333333;
+   padding: 35px 0px;
+   display: block;
+   width: 120px;
+   text-align: center;
+   box-sizing: border-box;
+   &:hover {
+      border-top: 3px solid #00e3e3;
+      color: @main;
+   }
+}
+
+// SECTION MAIN INFO //
+
+.main-info {
+   text-align: center;
+   margin-bottom: 60px;
+   h1 {
+      font-size: 3vw;
+      font-weight: 300;
+      margin-bottom: 20px;
+      color: @maindark;
+      font-family: "Lato";
+   }
+   h3 {
+      font-size: 21px;
+      font-weight: 300;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-family: "Lato";
+   }
+   h4 {
+      font-size: 13px;
+      color: #626262;
+      margin-bottom: 20px;
+      line-height: 20px;
+      font-weight: normal;
+      font-family: "Roboto";
+      margin-bottom: 30px;
+      text-shadow: 0px 0px 2px white;
+   }
+   h5 {
+      font-family: "Tahoma";
+      margin-bottom: 70px;
+      color: lighten(@font3, 20%);
+      font-size: 13px;
+   }
+   .icon {
+      font-size: 62px;
+   }
+   button {
+      margin-top: 20px;
+      margin-bottom: 61px;
+      color: #676767;
+      background: #f2f2f2;
+   }
+}
+
+// SECTION CONTACT //
+
+section.contact {
+   background: #ecf7f6;
+   font-family: "Lato";
+   font-weight: 300;
+   margin-bottom: 100px;
+   .image1 img{
+      width: 99%;
+   }
+   h2 {
+      font-family: "Lato";
+      font-weight: 300;
+      font-size: 25px;
+      padding: 10px 0px;
+   }
+   h3 {
+      line-height: 22px;
+      font-weight: 300;
+      font-size: 13px;
+      font-family: "Roboto";
+      padding: 0px 0px 20px 0px;
+      color: #626262;
+   }
+   .hours {
+      background: white;
+      background-image: url(../img/clockbackground.png);
+      background-size: cover;
+   }
+   .address {
+      background: #13bfb1;
+      color: white;
+      font-weight: 300;
+   }
+   h2 {
+      padding-bottom: 25px;
+   }
+   p {
+      line-height: 25px;
+   }
+   .row {
+      margin-bottom: 25px;
+      .col-md-4 {
+         text-align: center;
+         border-right: 2px dotted #00a3a3;
+      }
+   }
+}
+
+// SECTION OFFER //
+
+section.offer {
+   margin-top: 50px;
+   margin-bottom: 100px;
+   font-family: "Lato";
+  .col-md-12 {
+      text-align: left;
+     h2 {
+        font-size: 42px;
+        font-weight: 300;
+        padding-top: 10px;
+        text-align: center;
+        font-family: "Lato";
+        padding-bottom: 60px;
+     }h3 {
+        text-align: center;
+     }
+     h4 {
+        text-align: left;
+        font-family: "Lato";
+     }h5 {
+        font-family: "Roboto";
+        padding-top: 4px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        color: lighten(@font3, 30%);
+     }
+   }i {
+      font-size: 73px;
+      float: left;
+      padding-right: 13px;
+      color: @main;
+   }.col-md-4 {
+      padding-bottom: 65px;
+   }
+}
+
+// SECTION APPOINTMENT //
+
+section.appointment {
+   position: relative;
+   background: @font1;
+   font-family: "Lato";
+   height: 25vh;
+   text-align: center;
+   .container {
+      position: absolute;
+      top: calc(50%-20%);
+   }
+   h2 {
+      font-size: 22px;
+      display: inline;
+      width: 500px;
+      color: white;
+   }
+   button {
+      border-radius: 8px;
+   }
+   div.btn-group {
+   padding-left: 100px;
+   vertical-align: baseline;
+   margin-top: 15px;
+   }
+}
+
+// SECTION PERSONS //
+
+section.persons {
+   margin-top: 35px;
+   .image3 {
+      float: left;
+   }
+
+   .first {
+      float: left;
+      width: auto;
+   }
+   .wrapper {
+      display: inline-block;
+      float: left;
+      max-width: 53%;
+      padding-left: 20px;
+      padding-top: 10px;
+   }
+   h3 {
+      font-family: "Lato";
+      font-weight: 300;
+      font-size: 21px;
+   }
+   h4 {
+      font-family: "Roboto";
+      font-size: 13px;
+      color: lighten(@font3, 20%);
+      padding-top: 4px;
+   }
+   p {
+      font-family: "Roboto";
+      font-size: 13px;
+      line-height: 21px;
+   }
+   hr {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(39, 255, 172, 0), rgba(0, 188, 188, 0.75), rgba(0, 232, 170, 0));
+      max-width: 30%;
+   }
+
+   .socialicons2{
+      margin-top: 10px;
+      li {
+      display: inline-block;
+      padding: 10px;
+      border: 1px dashed @font1;
+      }
+   }
+}
+
+.image10 {
+   clear: both;
+}
+// SECTION HEART //
+
+section.heart {
+   .image10 {
+      padding: 55px 0px;
+      margin: 0 auto;
+      text-align: center;
+   }
+}
+
+
+// FOOTER //
+footer {
+   background: @font3;
+   text-align: center;
+   min-width: 100%;
+   min-height: 5vh;
+   color: white;
+   font-family: "Roboto";
+   font-size: 13px;
+
+   .container-fluid {
+   bottom: 0px;
+
+   }
+   .socialmedia3 li{
+      display: inline-block;
+      padding: 10px;
+   }
+   p {
+      line-height: 35px;
+   }
+   .col-md-4 {
+      margin-left: auto;
+   }
+}
+
+section.offer1, section.offer2, section.offer3, section.offer4 {
+   margin-bottom: 80px;
+   .col-md-4 {
+      border-right: 1px dotted lighten(@font3, 20%);
+   }
+   h2 {
+      font-size: 30px;
+      font-family: "Lato";
+      font-weight: 300;
+      padding: 10px 0px;
+   }
+   h3 {
+      font-size: ;
+      font-family: "Roboto";
+      margin-bottom: 10px;
+      color: @main;
+   }
+   i {
+      font-size: 62px;
+      color: @main;
+      padding-top: 100px;
+   }
+   p {
+      font-size: 13px;
+      line-height: 21px;
+      color: @font3;
+   }
+   ul {
+      padding: 10px 0px;
+      list-style: none;
+      line-height: 22px;
+      i {
+         font-size: 13px;
+      }
+   }button {
+      margin: 20px 0px;
+      i {
+         font-size: 13px;
+      }
+   }
+}
+section.breadcrumbrs{
+   background: rgba(19, 191, 177, 0.79);
+   width: 97vw;
+   bottom: 0;
+   position: absolute;
+   color: white;
+   line-height: 40px;
+   padding: 10px 10px;
+   z-index: 1;
+}
+
+// CONTACT //
+
+.container {
+   margin-bottom: 40px;
+   .wrapper2 {
+      i {
+         font-size: 62px;
+         color: @main;
+      }
+      .icon6 {
+         float: left;
+         padding: 0px 15px 15px 0px;
+      }
+   }h4 {
+      padding-top: 15px;
+      padding-bottom: 5px;
+      font-family: "Roboto";
+      font-size: 14px;
+   }h5 {
+      font-family: "Lato";
+      font-size: 21px;
+      font-weight: 300;
+   }
+}
+
+// SECTION FORM //
+
+section.form {
+   h2 {
+      font-family: "Lato";
+      font-size: 30px;
+      font-weight: 300;
+      padding-bottom: 14px;
+   }h5 {
+      font-family: "Robot";
+      font-size: 14px;
+      color: @font3;
+   }p {
+      font-family: "Robot";
+      font-size: 14px;
+      line-height: 25px;
+      padding-bottom: 14px;
+   }label {
+      padding-bottom: 5px;
+      font-family: "Roboto";
+      font-size: 13px;
+      font-weight: bold;
+   }
+}
+ul.socialicons6{
+   margin-top: 10px;
+   width: auto;
+   margin-bottom: 40px;
+   li {
+      display: inline-block;
+      padding: 10px;
+      border: 1px dashed @font1;
+   }
+}
+
+// SECTION ABOUT US //
+
+section.aboutus {
+   h2 {
+      font-family: "Lato";
+      font-size: 25px;
+      font-weight: 300;
+      padding-bottom: 10px;
+      color: @main;
+   }p {
+      font-family: "Roboto";
+      line-height: 21px;
+      font-size: 13px;
+      color: lighten(@font3, 20%);
+      &:nth-of-type(2) {
+         font-size: 11px;
+         color: lighten(@font3, 30%);
+      }
+   }
+}
+
+
+// SECTION WELCOME //
+
+section.welcome {
+   margin-bottom: 100px;
+   h2 {
+      font-family: "Lato";
+      font-size: 30px;
+      font-weight: 300;
+      text-align: center;
+      padding-bottom: 10px;
+   }p {
+      font-family: "Roboto";
+      font-size: 13px;
+      margin: 0 auto;
+      width: 60%;
+      text-align: center;
+      line-height: 22px;
+      color: lighten(@font3, 20%);
+   }
+}
+// SECTION SEPARATOR //
+
+section.separator {
+   text-align: center;
+   i {
+      font-size: 63px;
+      text-align: center;
+      color: @main;
+   }
+}
+
+
+// SECTION FACTORS //
+
+
+section.factors {
+   text-align: center;
+   .col-md-3 {
+      width: 22%;
+      background: url(../img/back2.png);
+   }
+   i {
+      font-size: 62px;
+      color: @main;
+   }h5 {
+      font-size: 50px;
+   }
+}
+
+
+// SECTION DETAILS //
+
+section.details {
+   margin-top: 100px;
+   h2 {
+      padding-top: 40px;
+      font-family: "Lato";
+      font-size: 30px;
+      font-weight: 300;
+      padding-bottom: 10px;
+   }p {
+      font-family: "Roboto";
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: normal;
+      color: lighten(@font3, 20%);
+   }img {
+      max-width: 400px;
+      padding-bottom: 100px;
+
+   &:hover {
+    filter: hue-rotate(330deg);
+    filter: drop-shadow(0px 2px 2px );
+   }
+}

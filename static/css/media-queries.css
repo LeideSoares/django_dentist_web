@@ -1,0 +1,75 @@
+@media only screen and (max-width:1200px) {
+   .jumbotron form.form-inline.my-2.my-lg-0.search {
+   display: none;
+	}.jumbotron .title h3 {
+		font-size: 1vw;
+		margin-top: 2%;
+	}section.persons div.container-fluid .row{
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}section.persons div.container-fluid .row .first {
+		max-width: 70%;
+	}
+}
+@media only screen and (max-width:995px) {
+   .navbar-nav a {
+      background: white;
+      padding: 30px 0px;
+      width: 100%;
+	}.jumbotron .title h3 {
+		font-size: 2vw;
+		margin-top: 2%;
+	}
+   .navbar-nav a {
+      border-bottom: 1px solid #ededed;
+	}
+	}
+@media only screen and (max-width:770px) {
+   .navbar-nav a {
+      background: white;
+      padding: 30px 0px;
+      width: 100%;
+	}.jumbotron .title h2 {
+		margin-top: 6vh;
+		font-size: 7vw;
+	}.main-info h1 {
+		font-size: 3.7vw;
+	}
+	section.persons div.container-fluid .row .first {
+
+		justify-content: left;
+	}
+	.jumbotron .title h3 {
+		font-size: 2vw;
+		margin-top: 2%;
+	}
+	footer .container-fluid .row .col-md-7 {
+		align-items: center;
+	}
+   .navbar-nav a {
+      border-bottom: 1px solid #ededed;
+   }
+   .social {
+      display: none;
+   }
+   section.contact .row .col-md-4 {
+      border-right: none;
+   }
+
+}
+@media only screen and (max-width:540px) {
+   ul.contactbar {
+      display: none;
+   }
+	.jumbotron .title h2 {
+		margin-top: 6vh;
+		font-size: 12vw;
+	}.jumbotron .title h3 {
+		font-size: 3vw;
+		margin-top: 2%;
+	}section.persons div.container-fluid .row .first {
+	 padding-left: 0px;
+	 flex-wrap: wrap;
+	}
+}

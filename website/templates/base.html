@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+    <meta name="description" content="{% block meta_description %} Dentist dental &amp; Medical in Pantufo {% endblock %}">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--    CSS   -->
+   <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" href="{% static 'css/fontello.css' %}">
+   <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+   <link rel="stylesheet" href="{% static 'css/media-queries.css' %}">
+   <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,400" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+   <title>{% block title %} Medical HTML Theme {% endblock %}</title>
+</head>
+
+<body>
+
+   <!--       header      -->
+   <div class="jumbotron">
+      <div class="container">
+         <div class="col-md-12">
+            <div class="row">
+               <div class="col-md-9">
+                  <ul class="contactbar">
+                     <li class="background">
+                        <h6 class="small">Have any questions?</h6></li>
+                     <li>
+                        <h6 class="small"><i class="icon-phone"></i> <span>+43 435 345 234</span></h6></li>
+                     <li>
+                        <h6 class="small"><i class="icon-mail"></i> <span>ask@medical.com</span></h6></li>
+                  </ul>
+               </div>
+               <div class="col-md-3 social">
+                  <ul class="socialmedia">
+                     <li><i class="icon-facebook"></i></li>
+                     <li><i class="icon-gplus"></i></li>
+                     <li><i class="icon-youtube"></i></li>
+                     <li><i class="icon-twitter"></i></li>
+                     <li><i class="icon-vimeo"></i></li>
+                     <li><i class="icon-pinterest"></i></li>
+                     <li><i class="icon-linkedin"></i></li>
+                     <li></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <a class="navbar-brand" href="/"><img src="{% static 'img/logo.JPG' %}" alt="">&nbsp;North Medica</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+               <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                  <li class="nav-item active"> <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="{% url 'about' %}">About Us</a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="{% url 'offer' %}">What we offer</a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="{% url 'contact' %}">Appointment</a> </li>
+               </ul>
+               <form class="form-inline my-2 my-lg-0 search">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  <button class="btn btn-outline my-2 my-sm-0" type="submit">Search</button>
+               </form>
+            </div>
+         </nav>
+
+        {% block image %}
+         <div class="col-md-12">
+            <div class="row">
+               <div class="col-md-12 title">
+                  <h2><span>1000</span> oportunities</h2>
+                  <h3>The easiest way to build different sites without many themes</h3>
+                              <div class="btn-group">
+                                  <button class="btn btn-large btn-calendar"  onclick="document.location='/appointment.html'">Make an appointment</button>
+                                  <button type="button" class="btn btn-large"><i class="icon-calendar"></i></button>
+                              </div>
+               </div>
+            </div>
+         </div>
+        </div> <img class="dentist" src="{% static 'img/dentist.png' %}" alt="" style="height:80%;"> </div>
+        {% endblock %}
+{% block content %}
+
+
+{% endblock %}
+
+
+
+{% block footer %}
+   <!--       footer       -->
+   <footer>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-5">
+               <p>Lorem ipsum dolor. <span>Culpa, commodi!</span></p>
+            </div>
+            <div class="col-md-4">
+               <ul class="socialmedia3">
+                  <li><i class="icon-facebook"></i></li>
+                  <li><i class="icon-gplus"></i></li>
+                  <li><i class="icon-youtube"></i></li>
+                  <li><i class="icon-twitter"></i></li>
+                  <li><i class="icon-vimeo"></i></li>
+                  <li><i class="icon-pinterest"></i></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- SCRIPTS -->
+   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+   <script src="{% static 'js/jquery.js' %}"></script>
+   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+   <script>
+   </script>
+{% endblock %}
+</body>
+
+</html>
+
